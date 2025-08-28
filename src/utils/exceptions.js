@@ -4,8 +4,9 @@
  * 
  * Build a new ThrottleCoreException object
  * 
- * @param {String} errorcode 
- * @param {String} errormessage 
+ * @param {String} errorcode Error Code
+ * @param {String} errormessage Error Message
+ * @param {Array} details Detailed Context 
  * 
  * @returns {Object} ThrottleCoreException Object
  */

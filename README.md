@@ -20,8 +20,20 @@ Features:
 - [Error Handling](#error-handling)
 
 ## Installation
-```bash
-npm install throttlecore
+
+This package is hosted on **GitHub Packages** under a private scope.  
+To install, you need a **GitHub Personal Access Token (PAT) with access to this repository**.  
+
+Configure your `.npmrc` like so:
+
+```sh
+@ravik002:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+```
+Then run:
+
+```sh
+npm install @ravik002/throttlecore
 ```
 
 ## Configuration

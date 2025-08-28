@@ -5,7 +5,7 @@
     "redis": "^5.8.0"
   },
   "name": "@ravik002/throttlecore",
-  "description": "> Flexible Redis-backed **rate limiting** and **deduplication** middleware for Express.",
+  "description": "ThrottleCore is a lightweight, high-performance middleware that combines **token bucket rate limiting** with **request deduplication** in a single configurable package.",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,10 @@
   "types": "types/index.d.ts",
   "author": "Ravishankar kaushal",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravik002/throttlecore.git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }

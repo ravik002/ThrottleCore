@@ -7,6 +7,8 @@ const { RATE_LIMIT_EXCEEDED_CODE, RATE_LIMIT_EXCEEDED_MESSAGE, DUPLICATE_REQUEST
 
 
 /**
+ * createLimiterMiddleware
+ * 
  * Creates a rate-limiting middleware for a given policy.
  * 
  * This middleware uses the token bucket algorithm to control the number of
@@ -51,6 +53,8 @@ const createLimiterMiddleware = function (policy, config) {
 }
 
 /**
+ * createDedupMiddleware
+ * 
  * Creates a deduplication middleware for a given policy.
  *
  * This middleware prevents duplicate requests within a specified window
@@ -80,6 +84,8 @@ const createDedupMiddleware = function (policy) {
 }
 
 /**
+ * init
+ * 
  * Initializes ThrottleCore with the given configuration and builds the
  * appropriate middleware functions for rate limiting and deduplication.
  *
