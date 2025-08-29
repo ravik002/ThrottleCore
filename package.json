@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@ravik002/throttlecore": "^1.0.0",
     "express": "^5.1.0",
     "joi": "^18.0.0",
     "redis": "^5.8.0"

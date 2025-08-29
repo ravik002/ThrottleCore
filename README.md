@@ -37,7 +37,7 @@ npm install @ravik002/throttlecore
 ```
 
 ## Configuration
-ThrottleCore can be initialized with a configuration object via `throttleCore.configureRateLimiter(config)`.  
+ThrottleCore can be initialized with a configuration object via `throttleCore.initRateLimiter(config)`.  
 Below is the full schema:
 
 ```js
@@ -71,14 +71,14 @@ Below is a simple example of integrating **ThrottleCore** into an Express app.
 
 ```js
 const express = require('express');
-const { configureRateLimiter } = require('throttlecore');
+const { initRateLimiter } = require('throttlecore');
 
 const app = express();
 
 
 (async () => {
   // Initialize ThrottleCore with desired Configurations
-  const { limiter, deduplication } = await configureRateLimiter({
+  const { limiter, deduplication } = await initRateLimiter({
     redisConfig: { url: "redis://localhost:6379" },
     addRateLimitHeaders: true,
     policies: [
