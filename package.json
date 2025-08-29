@@ -1,13 +1,13 @@
 {
   "dependencies": {
-    "@ravik002/throttlecore": "^1.0.0",
+    "@ravik002/throttlecore": "^1.0.1",
     "express": "^5.1.0",
     "joi": "^18.0.0",
     "redis": "^5.8.0"
   },
   "name": "@ravik002/throttlecore",
   "description": "ThrottleCore is a lightweight, high-performance middleware that combines **token bucket rate limiting** with **request deduplication** in a single configurable package.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
